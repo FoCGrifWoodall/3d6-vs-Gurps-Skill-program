@@ -37,7 +37,7 @@ Echo ..
 TIMEOUT 1 >nul
 Echo ...
 TIMEOUT 1 >nul
-IF %DieD% LSS %skill% goto :success Else goto:failure
+IF %DieD% LEQ %skill% goto :success Else goto:failure
 
 :CritFail
 Echo Critical Failure!
